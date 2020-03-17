@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>WebXR Portugal</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,31 +8,57 @@
 
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src="/script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <a-scene>
-        <a-assets>
-            <img id="pt-flag"
-                src="https://cdn.glitch.com/ca1ac3d9-41f3-4048-a75f-795a8e8abad8%2Fc8844dc39a1e3e31078770876efac2ec.png?v=1584386530019" />
-            <img id="sky"
-                src="https://cdn.glitch.com/ca1ac3d9-41f3-4048-a75f-795a8e8abad8%2FStreet%20View%20360.jpg?v=1584387785987">
-        </a-assets>
+      <a-assets>
+        <img
+          id="pt-flag"
+          src="https://cdn.glitch.com/ca1ac3d9-41f3-4048-a75f-795a8e8abad8%2Fc8844dc39a1e3e31078770876efac2ec.png?v=1584386530019"
+        />
+        <img
+          id="sky"
+          src="https://cdn.glitch.com/ca1ac3d9-41f3-4048-a75f-795a8e8abad8%2FStreet%20View%20360.jpg?v=1584387785987"
+        />
+      </a-assets>
 
-        <a-sky src="#sky"></a-sky>
+      <a-sky src="#sky"></a-sky>
 
-        <a-entity id="header" position="0 3 -4">
-            <a-text id="header-title" value="WebXR Portugal" color="#ffffff"></a-text>
+      <a-entity id="header" position="0 3 -3">
+        <a-plane rotation="" material="" geometry="" position="1.2 -0.1 -0.18132" color="black" scale="3 1 1"></a-plane>
+        <a-text
+          id="header-title"
+          value="WebXR Portugal"
+          color="#ffffff"
+        ></a-text>
 
-            <a-image src="#pt-flag" material="shader:flat" position="2 0 0" width="0.5" height="0.375"></a-image>
+        <a-image
+          src="#pt-flag"
+          material="shader:flat"
+          position="2 0 0"
+          width="0.5"
+          height="0.375"
+        ></a-image>
 
-            <a-text id="header-subtitle" value="The immersive web-community of Portugal" color="#ffffff" width="3"
-                position="-0.1 -0.4 0"></a-text>
-        </a-entity>
+        <a-text
+          id="header-subtitle"
+          value="The immersive web-community of Portugal"
+          color="#ffffff"
+          width="3"
+          position="-0.1 -0.4 0"
+        ></a-text>
+      </a-entity>
 
-        <a-entity id="head" wasd-controls mouse-controls look-controls cursor="rayOrigin: mouse" position="0 1.6 0">
-        </a-entity>
+      <a-entity
+        id="head"
+        wasd-controls
+        mouse-controls
+        look-controls
+        cursor="rayOrigin: mouse"
+        position="0 1.6 0"
+      >
+      </a-entity>
     </a-scene>
-</body>
-
+  </body>
 </html>
