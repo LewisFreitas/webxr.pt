@@ -1,6 +1,6 @@
 # webxr.pt
 
-The WebXR Community of Portugal
+The WebXR Community of Portugal 🇵🇹
 
 ## Tech Stack
 Simply A-Frame ❤️
